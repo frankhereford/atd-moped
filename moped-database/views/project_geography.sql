@@ -1,4 +1,4 @@
--- Most recent migration ðŸ\x90˜: moped-database/migrations/1708736794007_demo-view-bot/up.sql
+-- Most recent migration: moped-database/migrations/1708736794007_demo-view-bot/up.sql
 
 CREATE VIEW project_geography AS SELECT
     moped_project.project_id,
