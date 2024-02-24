@@ -1,4 +1,4 @@
--- Most recent migration: moped-database/migrations/1707416196012_add_check_for_deleted_components/up.sql
+-- Most recent migration: moped-database/migrations/1708736794007_demo-view-bot/up.sql
 
 CREATE VIEW component_arcgis_online_view AS WITH work_types AS (
     SELECT
