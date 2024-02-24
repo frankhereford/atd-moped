@@ -1,4 +1,4 @@
--- Most recent migration: moped-database/migrations/1708736794007_demo-view-bot/up.sql
+-- Most recent migration ðŸ\x90˜: moped-database/migrations/1708736794007_demo-view-bot/up.sql
 
 CREATE VIEW project_list_view AS WITH project_person_list_lookup AS (
     SELECT

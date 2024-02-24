@@ -1,4 +1,4 @@
--- Most recent migration: moped-database/migrations/1708736794007_demo-view-bot/up.sql
+-- Most recent migration ðŸ\x90˜: moped-database/migrations/1708736794007_demo-view-bot/up.sql
 
 CREATE VIEW current_phase_view AS SELECT DISTINCT ON (mpp.project_id, mpp.is_current_phase)
     mpp.project_id,
