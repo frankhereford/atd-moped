@@ -1,4 +1,4 @@
--- Most recent migration: moped-database/migrations/1708736794007_demo-view-bot/up.sql
+-- Most recent migration: 
 
 CREATE VIEW uniform_features AS SELECT
     feature_signals.id,
