@@ -1,4 +1,4 @@
--- Most recent migration: moped-database/migrations/1708736794007_demo-view-bot/up.sql
+-- Most recent migration: 
 
 CREATE VIEW component_arcgis_online_view AS WITH work_types AS (
     SELECT
