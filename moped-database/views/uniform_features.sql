@@ -1,4 +1,4 @@
--- Most recent migration: 
+-- Most recent migration: moped-database/migrations/1700515731002_add_audit_fields_to_unified_features_view/up.sql
 
 CREATE VIEW uniform_features AS SELECT
     feature_signals.id,
