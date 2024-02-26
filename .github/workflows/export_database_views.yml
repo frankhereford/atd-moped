@@ -69,10 +69,13 @@ jobs:
       #       psql -A -t -c \"SELECT 'CREATE VIEW ' || '\$VIEW_NAME' || ' AS ' || pg_get_viewdef('\$VIEW_NAME'::regclass, true);\" >> moped-database/views/\$VIEW_NAME.sql
       #     "
 
+      # - name: Generate CREATE VIEW statements
+      #   run: |
+      #     source $(pwd)/.github/workflows/export_database_views.sh
+      #     populate_views
+
       - name: Generate CREATE VIEW statements
-        run: |
-          source $(pwd)/.github/workflows/export_database_views.sh
-          populate_views
+        run: $(pwd)/.github/workflows/export_database_views.sh
 
       - name: Run SQLFluff
         run: |

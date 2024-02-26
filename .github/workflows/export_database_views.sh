@@ -22,3 +22,4 @@ function populate_views() {
     xargs -I {} bash -c "create_view_file '{}'"
 }
 
+populate_views
