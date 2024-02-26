@@ -77,7 +77,7 @@ project_district_association AS (
         WHERE features.is_deleted IS false AND moped_proj_components.is_deleted IS false
     ),
 
-parent_child_project_map AS (
+    parent_child_project_map AS (
         SELECT
             parent_projects.project_id,
             unnest(ARRAY[parent_projects.project_id] || array_agg(child_projects.project_id)) AS self_and_children_project_ids
