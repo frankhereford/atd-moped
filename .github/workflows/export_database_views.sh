@@ -15,6 +15,9 @@ function create_view_file() {
     psql -A -t -c "SELECT 'CREATE VIEW ' || '$VIEW_NAME' || ' AS ' || pg_get_viewdef('$VIEW_NAME'::regclass, true);" >> moped-database/views/$VIEW_NAME.sql
 }
 
+# Export the function
+export -f create_view_file
+
 function populate_views() {
     mkdir -p moped-database/views
     psql -A -t -c "SELECT table_name FROM information_schema.views WHERE table_schema = 'public';" | \
